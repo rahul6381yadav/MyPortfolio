@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Yadav - Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="fixed top-0 right-0 w-full bg-white shadow-md z-50 transition-all duration-300">
+        <nav class="container mx-auto flex justify-between items-center h-16 mr-5">
+            <a href="#" class="text-2xl font-bold text-gray-800 hover:text-blue-500 transition-colors">Rahul Yadav</a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#home" class="nav__link text-gray-600 hover:text-blue-500 transition-colors">Home</a>
+                <a href="#about" class="nav__link text-gray-600 hover:text-blue-500 transition-colors">About</a>
+                <a href="#skills" class="nav__link text-gray-600 hover:text-blue-500 transition-colors">Skills</a>
+                <a href="#projects" class="nav__link text-gray-600 hover:text-blue-500 transition-colors">Projects</a>
+                <a href="#experience"
+                    class="nav__link text-gray-600 hover:text-blue-500 transition-colors">Experience</a>
+                <a href="#contact" class="nav__link text-gray-600 hover:text-blue-500 transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="nav-toggle" class="text-2xl text-gray-800 focus:outline-none">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div
+        class="nav__menu fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+        <div class="flex justify-end p-4">
+            <button id="nav-close" class="text-2xl text-gray-800 focus:outline-none">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+        <ul class="flex flex-col space-y-6 p-4">
+            <li><a href="#home" class="nav__link text-gray-600 hover:text-blue-500 transition-colors">Home</a></li>
+            <li><a href="#about" class="nav__link text-gray-600 hover:text-blue-500 transition-colors">About</a></li>
+            <li><a href="#skills" class="nav__link text-gray-600 hover:text-blue-500 transition-colors">Skills</a></li>
+            <li><a href="#projects" class="nav__link text-gray-600 hover:text-blue-500 transition-colors">Projects</a>
+            </li>
+            <li><a href="#experience"
+                    class="nav__link text-gray-600 hover:text-blue-500 transition-colors">Experience</a></li>
+            <li><a href="#contact" class="nav__link text-gray-600 hover:text-blue-500 transition-colors">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <main class="mt-16">
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen flex items-center justify-center">
+            <div class="absolute inset-0">
+                <iframe src="background.html" class="w-full h-full border-0"></iframe>
+            </div>
+            <div class="relative z-10 text-center text-white">
+                <img src="../profilePic.jpg" alt="Profile Image"
+                    class="w-36 h-36 rounded-full mx-auto border-4 border-blue-500 shadow-lg mb-4">
+                <h1 class="text-4xl font-bold mb-2">Hi, I'm <span class="text-blue-500">Rahul Yadav</span></h1>
+                <h3 class="text-2xl mb-4">Full Stack Developer</h3>
+                <p class="mb-6">Passionate about creating beautiful and functional web applications</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="../MyResume.pdf"
+                        class="bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600 transition-colors"
+                        download>
+                        Download CV <i class='bx bx-download'></i>
+                    </a>
+                    <a href="#contact"
+                        class="border-2 border-blue-500 text-blue-500 py-2 px-4 rounded-lg shadow hover:bg-blue-500 hover:text-white transition-colors">Contact
+                        Me</a>
+                </div>
+                <div class="flex justify-center space-x-4 mt-6">
+                    <a href="mailto:rahul6381yadav@gmail.com"
+                        class="text-2xl text-white hover:text-blue-500 transition-colors"><i
+                            class='bx bxl-gmail'></i></a>
+                    <a href="https://github.com/rahul6381yadav"
+                        class="text-2xl text-white hover:text-blue-500 transition-colors"><i
+                            class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/rahul-yadav-542600295/"
+                        class="text-2xl text-white hover:text-blue-500 transition-colors"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://x.com/rahul6381yadav"
+                        class="text-2xl text-white hover:text-blue-500 transition-colors"><i
+                            class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/raahul_.04/"
+                        class="text-2xl text-white hover:text-blue-500 transition-colors"><i
+                            class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8">About Me</h2>
+                <p class="text-lg leading-relaxed mb-6">
+                    I am Rahul Yadav, a passionate Full Stack Developer with a knack for creating beautiful and
+                    functional web applications. With a strong foundation in both frontend and backend technologies, I
+                    strive to deliver seamless user experiences and robust solutions. My journey in the world of web
+                    development has been fueled by curiosity and a constant desire to learn and grow.
+                </p>
+                <p class="text-lg leading-relaxed mb-6">
+                    Over the years, I have honed my skills in various programming languages and frameworks, enabling me
+                    to tackle diverse projects with confidence. I believe in the power of collaboration and enjoy
+                    working with teams to bring ideas to life. When I'm not coding, you can find me exploring new
+                    technologies, reading tech blogs, or contributing to open-source projects.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Let's connect and create something amazing together!
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12">Technical Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React"
+                            class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">React</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                            alt="Tailwind CSS" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">Tailwind CSS</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                            alt="HTML5" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">HTML5</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                            alt="JavaScript" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">JavaScript</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Native"
+                            class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">React Native</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js"
+                            class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">Node.js</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress"
+                            alt="MongoDB" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">MongoDB</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" alt="Firebase"
+                            class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">Firebase</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express.js"
+                            class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">Express.js</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js"
+                            class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">Vue.js</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git"
+                            class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">Git</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                            alt="GitHub" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">GitHub</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                            alt="CSS3" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">CSS3</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+                            alt="Bootstrap" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">Bootstrap</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                            alt="Python" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">Python</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/DigitalOcean_logo.svg"
+                            alt="Digital Ocean" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">Digital Ocean</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAUVBMVEUAAAD///9PT0/t7e2Pj4/CwsJwcHCurq4mJibJyckHBwdWVla3t7fk5ORDQ0OCgoLX19f5+fkwMDCYmJgTExNfX181NTWfn58eHh6JiYlKSkpkZ/WiAAAAmElEQVRIie3USQ6DMBBEUQpjQ0hIDBnh/gfNjBiM3N0LFqj//q1KqiTRNG3TuVwIDQqRy4CdxJV4tRfAwxtWfHfEpxMb+i+suc7hF3cS84doWO7cO94kFwy6MqAdQkN3HUa1ZOjHEFTnJo48ST2FuJHcfebgKe4xd7RJbAgSJklDDsiisApDlBHXLjjYCOzShSQnomnaOj0BTTgDa4F6N48AAAAASUVORK5CYII="
+                            alt="Vercel" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">Vercel</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Studio_Logo_2024.svg/800px-Android_Studio_Logo_2024.svg.png"
+                            alt="Android Studio" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold">Android Studio</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article
+                        class="relative bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+                        data-aos="zoom-in">
+                        <img src="../Alumni.png" alt="Project 1" class="w-full h-64 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex flex-col justify-center items-center text-white p-4">
+                            <h3 class="text-xl font-bold mb-2">Alumni Connect Apk</h3>
+                            <p class="mb-4">app to connect alumni of the colleges</p>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/rahul6381yadav/Alumni-Connect-apk-file"
+                                    class="bg-blue-500 py-2 px-4 rounded-lg shadow hover:bg-blue-600 transition-colors">Demo
+                                    <i class='bx bx-link-external'></i></a>
+                                <a href="https://github.com/rahul6381yadav/Alumni-Connect-app"
+                                    class="bg-gray-800 py-2 px-4 rounded-lg shadow hover:bg-gray-900 transition-colors">Code
+                                    <i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article
+                        class="relative bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+                        data-aos="zoom-in">
+                        <img src="../Leaderboard.png" alt="Project 1" class="w-full h-64 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex flex-col justify-center items-center text-white p-4">
+                            <h3 class="text-xl font-bold mb-2">Leaderboard</h3>
+                            <p class="mb-4">Leaderboard platform for the clubs of our colleges where student can
+                                participate in events and see their points
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="https://leagueiiitr.vercel.app/login"
+                                    class="bg-blue-500 py-2 px-4 rounded-lg shadow hover:bg-blue-600 transition-colors">Demo
+                                    <i class='bx bx-link-external'></i></a>
+                                <a href="https://github.com/rahul6381yadav/League"
+                                    class="bg-gray-800 py-2 px-4 rounded-lg shadow hover:bg-gray-900 transition-colors">Code
+                                    <i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article
+                        class="relative bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+                        data-aos="zoom-in">
+                        <img src="../EchoEye.png" alt="Project 1" class="w-full h-64 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex flex-col justify-center items-center text-white p-4">
+                            <h3 class="text-xl font-bold mb-2">EchoEye</h3>
+                            <p class="mb-4">one to one Video Confrencing website
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="https://echo-eye.vercel.app/lobby.html"
+                                    class="bg-blue-500 py-2 px-4 rounded-lg shadow hover:bg-blue-600 transition-colors">Demo
+                                    <i class='bx bx-link-external'></i></a>
+                                <a href="https://github.com/rahul6381yadav/Echo-Eye"
+                                    class="bg-gray-800 py-2 px-4 rounded-lg shadow hover:bg-gray-900 transition-colors">Code
+                                    <i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article
+                        class="relative bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+                        data-aos="zoom-in">
+                        <img src="../Library.png" alt="Project 1" class="w-full h-64 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex flex-col justify-center items-center text-white p-4">
+                            <h3 class="text-xl font-bold mb-2">Library Management Backend API</h3>
+                            <p class="mb-4">API to reigster login and for managing book issue in library
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/rahul6381yadav/library-management"
+                                    class="bg-gray-800 py-2 px-4 rounded-lg shadow hover:bg-gray-900 transition-colors">Code
+                                    <i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12">Work Experience</h2>
+                <div class="relative">
+                    <div class="border-l-4 border-blue-500 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+                    <div class="space-y-4">
+                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 relative w-full md:w-1/2 left-1/2 -ml-8"
+                            data-aos="fade-right">
+                            <h3 class="text-xl font-bold mb-2">Club Operation Lead</h3>
+                            <p class="text-blue-500 mb-2">Sci-Tech Club IIIT Raichur</p>
+                            <span class="text-gray-600 mb-4 block">September 2024 - Present</span>
+                            <p>participate in organizing code conflux hackathon and also in operation of other club</p>
+                            <div
+                                class="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                                1</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 relative w-full md:w-1/2 left-1 ml-8"
+                            data-aos="fade-left">
+                            <h3 class="text-xl font-bold mb-2">Leader</h3>
+                            <p class="text-blue-500 mb-2">Leaderboard website of college</p>
+                            <span class="text-gray-600 mb-4 block">December 2024 - Present</span>
+                            <p>Leader of making the website which help clubs of the college to organize events and also
+                                for student to participate in the events and get points and see thier position in the
+                                college</p>
+                            <div
+                                class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                                2</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 relative w-full md:w-1/2 left-1/2 -ml-8"
+                            data-aos="fade-right">
+                            <h3 class="text-xl font-bold mb-2">Core Member</h3>
+                            <p class="text-blue-500 mb-2">CodeSoc club IIIT Raichur</p>
+                            <span class="text-gray-600 mb-4 block">September 2023 - August 2024</span>
+                            <p>participate in organizing GPA Genie hackathon and also different hackathon and designing
+                                of club products and prizes</p>
+                            <div
+                                class="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                                3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12">Get in Touch</h2>
+                <form action="#" class="max-w-lg mx-auto bg-gray-100 p-8 rounded-lg shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <input type="text" placeholder="Name"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        <input type="email" placeholder="Email"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <textarea placeholder="Message"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 mb-4"></textarea>
+                    <button type="submit"
+                        class="bg-blue-500 text-white py-3 px-6 rounded-lg shadow hover:bg-blue-600 transition-colors">Send
+                        Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Rahul Yadav. All rights reserved</p>
+            <p class="mt-2">
+                <a href="tel:+919129508773" class="hover:text-blue-500 transition-colors">Phone: +91 9129508773</a>
+            </p>
+            <p>
+                <a href="mailto:rahul6381yadav@gmail.com" class="hover:text-blue-500 transition-colors">Email:
+                    rahul6381yadav@gmail.com</a>
+            </p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://github.com/rahul6381yadav"
+                    class="text-2xl text-white hover:text-blue-500 transition-colors">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rahul-yadav-542600295/"
+                    class="text-2xl text-white hover:text-blue-500 transition-colors">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://x.com/rahul6381yadav"
+                    class="text-2xl text-white hover:text-blue-500 transition-colors">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.instagram.com/raahul_.04/"
+                    class="text-2xl text-white hover:text-blue-500 transition-colors">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
