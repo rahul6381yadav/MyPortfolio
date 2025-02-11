@@ -12,7 +12,7 @@
 
 <body class="bg-gray-100 text-gray-800">
     <header class="fixed top-0 right-0 w-full bg-white shadow-md z-50 transition-all duration-300">
-        <nav class="container mx-auto flex justify-between items-center h-16 mr-5">
+        <nav class="container mx-auto flex justify-between items-center h-16 px-5">
             <a href="#" class="text-2xl font-bold text-gray-800 hover:text-blue-500 transition-colors">Rahul Yadav</a>
             <div class="hidden md:flex space-x-4">
                 <a href="#home" class="nav__link text-gray-600 hover:text-blue-500 transition-colors">Home</a>
@@ -31,7 +31,7 @@
         </nav>
     </header>
 
-    <div
+    <div id="mobile-menu"
         class="nav__menu fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50">
         <div class="flex justify-end p-4">
             <button id="nav-close" class="text-2xl text-gray-800 focus:outline-none">
@@ -95,7 +95,7 @@
 
         <!-- About Section -->
         <section id="about" class="py-20 bg-white">
-            <div class="container mx-auto text-center">
+            <div class="container mx-auto text-center px-5">
                 <h2 class="text-3xl font-bold mb-8">About Me</h2>
                 <p class="text-lg leading-relaxed mb-6">
                     I am Rahul Yadav, a passionate Full Stack Developer with a knack for creating beautiful and
@@ -117,7 +117,7 @@
 
         <!-- Skills Section -->
         <section id="skills" class="py-20 bg-gray-100">
-            <div class="container mx-auto text-center">
+            <div class="container mx-auto text-center px-5">
                 <h2 class="text-3xl font-bold mb-12">Technical Skills</h2>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                     <div
@@ -234,7 +234,7 @@
 
         <!-- Projects Section -->
         <section id="projects" class="py-20 bg-white">
-            <div class="container mx-auto text-center">
+            <div class="container mx-auto text-center px-5">
                 <h2 class="text-3xl font-bold mb-12">Featured Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <article
@@ -317,22 +317,22 @@
 
         <!-- Experience Section -->
         <section id="experience" class="py-20 bg-gray-100">
-            <div class="container mx-auto text-center">
+            <div class="container mx-auto text-center px-5">
                 <h2 class="text-3xl font-bold mb-12">Work Experience</h2>
                 <div class="relative">
                     <div class="border-l-4 border-blue-500 absolute h-full left-1/2 transform -translate-x-1/2"></div>
                     <div class="space-y-4">
-                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 relative w-full md:w-1/2 left-1/2 -ml-8"
+                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 relative w-full md:w-1/2 md:left-1/2 md:-ml-8"
                             data-aos="fade-right">
                             <h3 class="text-xl font-bold mb-2">Club Operation Lead</h3>
                             <p class="text-blue-500 mb-2">Sci-Tech Club IIIT Raichur</p>
                             <span class="text-gray-600 mb-4 block">September 2024 - Present</span>
                             <p>participate in organizing code conflux hackathon and also in operation of other club</p>
                             <div
-                                class="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                                class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center md:left-0 md:transform-none">
                                 1</div>
                         </div>
-                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 relative w-full md:w-1/2 left-1 ml-8"
+                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 relative w-full md:w-1/2 md:left-1 md:ml-8"
                             data-aos="fade-left">
                             <h3 class="text-xl font-bold mb-2">Leader</h3>
                             <p class="text-blue-500 mb-2">Leaderboard website of college</p>
@@ -341,10 +341,10 @@
                                 for student to participate in the events and get points and see thier position in the
                                 college</p>
                             <div
-                                class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                                class="absolute top-0 right-1/2 transform translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center md:right-0 md:transform-none">
                                 2</div>
                         </div>
-                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 relative w-full md:w-1/2 left-1/2 -ml-8"
+                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 relative w-full md:w-1/2 md:left-1/2 md:-ml-8"
                             data-aos="fade-right">
                             <h3 class="text-xl font-bold mb-2">Core Member</h3>
                             <p class="text-blue-500 mb-2">CodeSoc club IIIT Raichur</p>
@@ -352,7 +352,7 @@
                             <p>participate in organizing GPA Genie hackathon and also different hackathon and designing
                                 of club products and prizes</p>
                             <div
-                                class="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                                class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center md:left-0 md:transform-none">
                                 3</div>
                         </div>
                     </div>
@@ -362,7 +362,7 @@
 
         <!-- Contact Section -->
         <section id="contact" class="py-20 bg-white">
-            <div class="container mx-auto text-center">
+            <div class="container mx-auto text-center px-5">
                 <h2 class="text-3xl font-bold mb-12">Get in Touch</h2>
                 <form action="#" class="max-w-lg mx-auto bg-gray-100 p-8 rounded-lg shadow-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -382,7 +382,7 @@
     </main>
 
     <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
+        <div class="container mx-auto text-center px-5">
             <p>© 2024 Rahul Yadav. All rights reserved</p>
             <p class="mt-2">
                 <a href="tel:+919129508773" class="hover:text-blue-500 transition-colors">Phone: +91 9129508773</a>
@@ -414,6 +414,21 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('translate-x-full');
+        });
+
+        document.getElementById('nav-close').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.add('translate-x-full');
+        });
+
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', function () {
+                document.getElementById('mobile-menu').classList.add('translate-x-full');
+            });
+        });
+    </script>
 </body>
 
 </html>
